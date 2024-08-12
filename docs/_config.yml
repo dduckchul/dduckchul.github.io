@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: 개발자 생존일기
+email: dduckchul@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  이것은 웹서비스 개발자에서 게임 관련 개발자로 전환하며 경험한 일들을 기록하는 생존일기 이다.
+  포트폴리오 및 기타 이것저것 공부하면서 추가되는 이야기들을 적을 예정이다.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://dduckchul.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: dduckchul_22
+github_username:  dduckchul
 
 # Build settings
 remote_theme: daattali/beautiful-jekyll@6.0.1
