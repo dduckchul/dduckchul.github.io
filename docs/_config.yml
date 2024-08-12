@@ -17,9 +17,6 @@ title: 개발자 생존일기
 
 # Your name to show in the footer
 author: DDuckchul
-description:
-  이것은 웹서비스 개발자에서 게임 관련 개발자로 전환하며 경험한 일들을 기록하는 생존일기 이다.
-  포트폴리오 및 기타 이것저것 공부하면서 추가되는 이야기들을 적을 예정이다.
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -27,6 +24,8 @@ description:
 
 navbar-links:
   About Me: "about"
+  Tags : "tags"
+  # Minimal : "minimal"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
