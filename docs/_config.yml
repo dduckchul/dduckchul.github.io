@@ -20,7 +20,7 @@
 
 title: 개발자 생존일기
 email: dduckchul@naver.com
-description: >- # this means to ignore newlines until "baseurl:"
+description:
   이것은 웹서비스 개발자에서 게임 관련 개발자로 전환하며 경험한 일들을 기록하는 생존일기 이다.
   포트폴리오 및 기타 이것저것 공부하면서 추가되는 이야기들을 적을 예정이다.
 baseurl: "/" # the subpath of your site, e.g. /blog
