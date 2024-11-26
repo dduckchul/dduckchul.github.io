@@ -24,7 +24,7 @@ Visual Studio Code의 C# 플러그인으로 어느정도는 가능.
 혹은 JetBrains의 Rider라는 상용 프로그램도 쓸만하다고 한다.
   * [Rider](https://www.jetbrains.com/ko-kr/rider/)
 
-닷넷 프레임 워크의 맥 OS 지원 여부는 아래 문서를 참고하면 좋을듯!
+닷넷의 맥 OS 지원 여부는 아래 문서를 참고하면 좋을듯! (닷넷 코어 부분)
   * [MacOS의.net지원](https://learn.microsoft.com/ko-kr/dotnet/core/install/macos)
 
 ## 난 뭘 고를것인가?
