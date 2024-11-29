@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 함수 심화 문제 풀어보기, 재귀 함수의 위험성
-subTitle : 실제로 알아보는 재귀 함수의 위험
+subtitle: 심화문제 풀면서 다시 되짚어보는 재귀함수의 위험성..
 author: dduckchul
 tags : [C#, 함수, 메타버스부트캠프]
 ---
