@@ -81,6 +81,7 @@ public int DigitsSumEncoderByConvertStr(int target)
 // math로 일단 해결, 추후에 봅시다
 public int DigitsSumEncoder(int target)
 {
+    int result = 0;
     for (int i = 0; i < 10; i++)
     {
         result += target / (int) Math.Pow(10, i) % 10;
