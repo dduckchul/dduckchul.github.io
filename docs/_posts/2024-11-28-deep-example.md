@@ -32,14 +32,13 @@ tags : [C#, 배열, 메타버스부트캠프]
 ## 의사코드 짜보기
 1. QWER 스킬의 모음을 이중 포문으로 보여준다.  
   * 이중포문으로 출력시, 중간에 스킬과 : 는 0번에만 넣어준다.
+  * 쿨타임이 0 이라면 0 을 출력하는 것이 아니라 "스킬 준비 완료"를 출력한다.  
 2. 유저에게 입력가능한 선택창을 준다.  
   * 0번 종료, 1번 턴넘김, 2번 스킬사용
   * 2번 스킬 사용은 QWER로 판단한다.
 3. 쿨타임이 0보다 큰 스킬은 쿨타임이 돌아오지 않았습니다 출력 후 초기로 돌아간다.
 4. 턴넘김을 사용했다면 모든 스킬의 쿨타임을 1초씩 감소시킨다.
 5. 쿨타임이 0이고 스킬을 사용하지 않는다면 0으로 계속 유지한다.
-  * 쿨타임이 0 이라면 0 을 출력하는 것이 아니라 "스킬 준비 완료"를 출력한다.  
-
 ```cs
 public void turnBasedActionGame()
 {
@@ -55,35 +54,26 @@ public void turnBasedActionGame()
     while (true)
     {
         Console.WriteLine("🤺가렌 시뮬레이터🤺");
-        Console.WriteLine("사용 가능한 스킬은 다음과 같습니다\n\n");
+        Console.WriteLine("사용 가능한 스킬은 다음과 같습니다\n");
         for (int i = 0; i < skillCoolDowns.GetLength(0); i++)
         {
-            for (int j = 0; j < skillCoolDowns.GetLength(1); j++)
+            for (int j = 0; j < 2; j++)
             {
+                Console.Write($"{skillCoolDowns[i,j]}");
                 if (j == 0)
                 {
-                    Console.Write($"{skillCoolDowns[i,j]}");
-                    Console.Write("스킬 : ");
+                    Console.Write(" 스킬 : ");
                 }
-                else if (j == 1 || j == 3)
+                else if (j == 1 && skillCoolDowns[i,j] == "0")
                 {
-                    continue;
-                }
-                else if (j == 2 && skillCoolDowns[i,j] == "0")
-                {
-                    Console.Write("스킬 준비 완료");
-                }
-                else
-                {
-                    Console.Write($"{skillCoolDowns[i,j]}");
+                    Console.Write("\b: 스킬 준비 완료");
                 }
             }
             Console.WriteLine("");
         }
-        Console.WriteLine("");
-        Console.WriteLine("🕹🕹🕹🕹🕹🕹🕹🕹️");
-        Console.WriteLine("액션을 선택해 주세요");
-        Console.WriteLine("🕹🕹🕹🕹🕹🕹🕹🕹️\n");
+        Console.WriteLine("\n🕹🕹🕹🕹🕹🕹🕹🕹🕹🕹️🕹🕹🕹🕹🕹🕹🕹");
+        Console.WriteLine("🕹\t액션을 선택해 주세요\t 🕹");
+        Console.WriteLine("🕹🕹🕹🕹🕹🕹🕹🕹🕹️🕹🕹🕹🕹🕹🕹🕹🕹\n");
         Console.WriteLine("0. 종료");
         Console.WriteLine("1. 턴 넘김");
         Console.WriteLine("2. 스킬 사용");
@@ -100,13 +90,14 @@ public void turnBasedActionGame()
         {
             for (int i = 0; i < skillCoolDowns.GetLength(0); i++)
             {
-                int coolDown = int.Parse(skillCoolDowns[i,2]);
+                int coolDown = int.Parse(skillCoolDowns[i,1]);
                 coolDown--;
                 if (coolDown <= 0)
                 {
                     coolDown = 0;
                 }
-                skillCoolDowns[i, 2] = $"{coolDown}";
+                // 아직 안배웠지만 coolDown.ToString(); 으로 해서 변환해도 될듯.
+                skillCoolDowns[i, 1] = $"{coolDown}";
             }                    
         }
 
@@ -120,25 +111,25 @@ public void turnBasedActionGame()
             int keyIndex = -1;
             if (skillKey.Key == ConsoleKey.Q)
             {
-                string qSkillCoolDown = skillCoolDowns[0, 2];
+                string qSkillCoolDown = skillCoolDowns[0, 1];
                 someSkillCoolDown = int.Parse(qSkillCoolDown);
                 keyIndex = 0;
             }
             else if (skillKey.Key == ConsoleKey.W)
             {
-                string qSkillCoolDown = skillCoolDowns[1, 2];
+                string qSkillCoolDown = skillCoolDowns[1, 1];
                 someSkillCoolDown = int.Parse(qSkillCoolDown);
                 keyIndex = 1;
             }
             else if (skillKey.Key == ConsoleKey.E)
             {
-                string qSkillCoolDown = skillCoolDowns[2, 2];
+                string qSkillCoolDown = skillCoolDowns[2, 1];
                 someSkillCoolDown = int.Parse(qSkillCoolDown);
                 keyIndex = 2;                        
             }
             else if (skillKey.Key == ConsoleKey.R)
             {
-                string qSkillCoolDown = skillCoolDowns[3, 2];
+                string qSkillCoolDown = skillCoolDowns[3, 1];
                 someSkillCoolDown = int.Parse(qSkillCoolDown);
                 keyIndex = 3;
             }
@@ -156,15 +147,20 @@ public void turnBasedActionGame()
             else if(someSkillCoolDown == 0)
             {
                 Console.WriteLine(skillCoolDowns[keyIndex,3]);
-                skillCoolDowns[keyIndex, 2] = skillCoolDowns[keyIndex, 1];
+                skillCoolDowns[keyIndex, 1] = skillCoolDowns[keyIndex, 2];
             }
         }
     }
+}
 ```
 
 ## 짜면서 더 추가로 구현해본것들
 * 배열을 4x2로 하지 않고, QWER에 따른 몇개 데이터들을 더 얻기 편하게 하기위해,
   쿨다운 기본 초를 저장해 놓는 숫자와, 스킬에 따른 텍스트를 저장해 두었다
-* 쿨다운 계산시에 이중 포문으로 돌리지 않고 쿨다운을 저장할 수 있는 인덱스를 알고 있으니 한번만 돌린다.
-  * 턴 넘김 사용시에 한번만 계산해서 돌릴 수 있도록
+  * 쿨다운 계산시에 이중 포문으로 돌리지 않고 쿨다운을 저장할 수 있는 인덱스를 알고 있으니 한번만 돌린다.
+  * 쿨다운 초기화시 저장해둔 스킬의 기본 시간을 이용한다.
+  * 스킬 발동시에 대사를 출력한다.
 * 2번을 눌렀을때 스킬 쿨다운과 눌렀던 키의 인덱스를 저장할 수 있는 임시 변수를 만들었다.
+  * -1로 초기화
+
+* [FlowChart](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=turnbasedgame.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fdduckchul%2Fdduckchul.github.io%2Fgh-pages%2Fdocs%2Fassets%2Fimg%2Fturnbasedgame.drawio)
