@@ -163,4 +163,11 @@ public void turnBasedActionGame()
 * 2번을 눌렀을때 스킬 쿨다운과 눌렀던 키의 인덱스를 저장할 수 있는 임시 변수를 만들었다.
   * -1로 초기화
 
+## 보완해야 할 점..?
+* string [][] 이중배열로 변수를 선언 했기 때문에 쿨타임 계산할때 string -> int -> string 을 반복해서 변환해 주는 과정이 발생
+  * 같이 담아 줄 수 있지 않을까?
+* 맥 콘솔에서는 이모지가 정상적으로 노출 되나, 윈도우에서는 ??로 꺠진다
+  * [해결법?](https://stackoverflow.com/questions/67508469/how-to-show-emoji-in-c-sharp-console-output)
+  * 일반적인 윈도우 10 환경에서는 해결하기가 어려울 것 같다. (마이크로소프트 마켓에서 windows terminal 앱 다운, 혹은 윈도우 11 사용)
+
 * [FlowChart](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=turnbasedgame.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fdduckchul%2Fdduckchul.github.io%2Fgh-pages%2Fdocs%2Fassets%2Fimg%2Fturnbasedgame.drawio)
