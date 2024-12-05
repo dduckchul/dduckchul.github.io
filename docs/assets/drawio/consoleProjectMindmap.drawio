@@ -375,8 +375,14 @@
             <mxPoint x="2110" y="746" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-122" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1709" y="250" width="142" height="142" as="geometry" />
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-122" value="일단은 리치와 쯔모만 구현하자" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1709" y="250" width="176" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-123" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1664" y="552" as="sourcePoint" />
+            <mxPoint x="1714" y="502" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
