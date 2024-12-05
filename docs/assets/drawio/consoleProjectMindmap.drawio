@@ -4,8 +4,8 @@
       <root>
         <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
         <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-87" value="각 플레이어 순서대로 계속 반복&lt;div&gt;동-&amp;gt;남-&amp;gt;서-&amp;gt;북&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="1103" y="418" width="310" height="337" as="geometry" />
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-87" value="각 플레이어 순서대로 계속 반복&lt;div&gt;동-&amp;gt;남-&amp;gt;서-&amp;gt;북&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1103" y="427" width="310" height="337" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-72" value="울기&lt;br&gt;&lt;div&gt;1. 어느쪽에서 가져왔는지 표시한다&lt;/div&gt;&lt;div&gt;2. 선언한 다음사람한테 턴이 넘어간다&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1508" y="561" width="164" height="328" as="geometry" />
@@ -13,10 +13,10 @@
         <mxCell id="BLhZ6JWoXuRRobSCugTl-7" value="마작 게임 만들기" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="398" y="309" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-9" value="플레이어 4인" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-9" value="플레이어 4인" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="285" y="205" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-11" value="&lt;div&gt;나&lt;/div&gt;플레이어 생성&lt;div&gt;이름 입력&lt;/div&gt;&lt;div&gt;점수 초기화 - 25000점&lt;/div&gt;&lt;div&gt;승 / 패 입력&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-11" value="&lt;div&gt;나&lt;/div&gt;플레이어 생성&lt;div&gt;이름 입력&lt;/div&gt;&lt;div&gt;점수 초기화 - 25000점&lt;/div&gt;&lt;div&gt;승 / 패 입력&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="297" y="40" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-9" target="BLhZ6JWoXuRRobSCugTl-11">
@@ -25,10 +25,10 @@
             <mxPoint x="534" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-15" value="게임" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-15" value="게임" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="485" y="196" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-19" value="CPU 생성" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-19" value="CPU 생성" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="375" y="120" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-21" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-9" target="BLhZ6JWoXuRRobSCugTl-19">
@@ -55,7 +55,7 @@
             <mxPoint x="534" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-26" value="동남서북&lt;div&gt;각각 4회씩, 동 1국 n장&lt;/div&gt;&lt;div&gt;동장전만 구현 (4회)&lt;/div&gt;&lt;div&gt;1. -점수 간사람 있으면 종료&lt;/div&gt;&lt;div&gt;2. 4회 끝났을때 30000점 이상&amp;nbsp;&lt;/div&gt;&lt;div&gt;들고있는 사람 있으면 종료&lt;/div&gt;&lt;div&gt;3. 1,2가 아무도 없으면 연장전,&amp;nbsp;&lt;/div&gt;&lt;div&gt;30000점 나올떄까지&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-26" value="동남서북&lt;div&gt;각각 4회씩, 동 1국 n장&lt;/div&gt;&lt;div&gt;동장전만 구현 (4회)&lt;/div&gt;&lt;div&gt;1. -점수 간사람 있으면 종료&lt;/div&gt;&lt;div&gt;2. 4회 끝났을때 30000점 이상&amp;nbsp;&lt;/div&gt;&lt;div&gt;들고있는 사람 있으면 종료&lt;/div&gt;&lt;div&gt;3. 1,2가 아무도 없으면 연장전,&amp;nbsp;&lt;/div&gt;&lt;div&gt;30000점 나올떄까지&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="634" y="106" width="199" height="123" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-28" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.033;exitY=0.6;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-29" target="BLhZ6JWoXuRRobSCugTl-19">
@@ -76,7 +76,7 @@
         <mxCell id="BLhZ6JWoXuRRobSCugTl-31" value="시간이 남는다면&lt;div&gt;단순하게 로직을 짤수는 있을듯&lt;/div&gt;&lt;div&gt;무조건 울어버린다던가&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="561" y="-71" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-32" value="일단은 돌아가면서&lt;div&gt;하는걸로 구현?&lt;/div&gt;&lt;div&gt;아님 내가 1국 끝날때까지 구현&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-32" value="일단은 돌아가면서&lt;div&gt;하는걸로 구현?&lt;/div&gt;&lt;div&gt;아님 내가 1국 끝날때까지 구현&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="845" y="26" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-33" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-32" target="BLhZ6JWoXuRRobSCugTl-26">
@@ -94,7 +94,7 @@
             <mxPoint x="733" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-37" value="&lt;div&gt;(수패 108개, 자패 28개)&lt;/div&gt;&lt;div&gt;136개 패를 랜덤으로 셔플&lt;/div&gt;&lt;div&gt;내 스택에는 13개만 있음&lt;/div&gt;&lt;div&gt;1개 슬롯은 임시 (temp)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-37" value="&lt;div&gt;(수패 108개, 자패 28개)&lt;/div&gt;&lt;div&gt;136개 패를 랜덤으로 셔플&lt;/div&gt;&lt;div&gt;내 스택에는 13개만 있음&lt;/div&gt;&lt;div&gt;1개 슬롯은 임시 (temp)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="926" y="137" width="213" height="101" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-38" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-34" target="BLhZ6JWoXuRRobSCugTl-37">
@@ -103,7 +103,7 @@
             <mxPoint x="733" y="207" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-40" value="패의 종류" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-40" value="패의 종류" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="571" y="347" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-41" value="" style="endArrow=none;html=1;rounded=0;exitX=0.982;exitY=0.623;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-7" target="BLhZ6JWoXuRRobSCugTl-40">
@@ -112,13 +112,13 @@
             <mxPoint x="733" y="233" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-54" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-54" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="711" y="397" width="328" height="192" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-47" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;각 패를 4장씩 사용&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" vertex="1" parent="BLhZ6JWoXuRRobSCugTl-54">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-47" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;각 패를 4장씩 사용&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="BLhZ6JWoXuRRobSCugTl-54">
           <mxGeometry width="328" height="192" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-49" value="" style="group" vertex="1" connectable="0" parent="BLhZ6JWoXuRRobSCugTl-54">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-49" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" connectable="0" parent="BLhZ6JWoXuRRobSCugTl-54">
           <mxGeometry x="173.99801104972377" y="38.994285714285716" width="108.7292817679558" height="114" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-45" value="풍패" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BLhZ6JWoXuRRobSCugTl-49">
@@ -127,7 +127,7 @@
         <mxCell id="BLhZ6JWoXuRRobSCugTl-46" value="자패" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BLhZ6JWoXuRRobSCugTl-49">
           <mxGeometry y="45.42857142857142" width="108.7292817679558" height="68.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-53" value="" style="group" vertex="1" connectable="0" parent="BLhZ6JWoXuRRobSCugTl-54">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-53" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" connectable="0" parent="BLhZ6JWoXuRRobSCugTl-54">
           <mxGeometry x="28.003867403314917" y="11.56857142857143" width="108.7292817679558" height="168.85714285714286" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-42" value="만수패" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BLhZ6JWoXuRRobSCugTl-53">
@@ -145,8 +145,8 @@
             <mxPoint x="768" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-56" value="처음 나눠주는 패의 갯수?&lt;div&gt;13*4 = 52&lt;/div&gt;&lt;div&gt;쓰지 않는 패의 갯수 14개&lt;/div&gt;&lt;div&gt;4개는 영상패 -&amp;gt; 깡치면 받아감&lt;/div&gt;&lt;div&gt;덱에 있는 나머지 패 70개&lt;/div&gt;&lt;div&gt;친 부터 반시계 방향으로 패를 가져간다&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1071" y="294" width="189" height="118" as="geometry" />
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-56" value="처음 나눠주는 패의 갯수?&lt;div&gt;13*4 = 52&lt;/div&gt;&lt;div&gt;쓰지 않는 패의 갯수 14개&lt;/div&gt;&lt;div&gt;4개는 영상패 -&amp;gt; 깡치면 받아감&lt;/div&gt;&lt;div&gt;덱에 있는 나머지 패 70개&lt;/div&gt;&lt;div&gt;친 부터 반시계 방향으로 패를 가져간다&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1074" y="273" width="189" height="118" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-57" value="" style="endArrow=none;html=1;rounded=0;entryX=0.743;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-56" target="BLhZ6JWoXuRRobSCugTl-37">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -160,10 +160,10 @@
             <mxPoint x="1239" y="398" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-59" value="쯔모&lt;div&gt;1. 덱에서 패를 하나 뽑는다&lt;/div&gt;&lt;div&gt;2. 나의 템프에 패를 담아둔다&lt;/div&gt;&lt;div&gt;3. 나의 스택 + 템프가 화료할수 있다면 쯔모를 띄운다&lt;/div&gt;&lt;div&gt;4. 리치를 할 수 있다면 리치를 띄운다&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-59" value="쯔모&lt;div&gt;1. 덱에서 패를 하나 뽑는다&lt;/div&gt;&lt;div&gt;2. 나의 템프에 패를 담아둔다&lt;/div&gt;&lt;div&gt;3. 나의 스택 + 템프가 화료할수 있다면 쯔모를 띄운다&lt;/div&gt;&lt;div&gt;4. 리치를 할 수 있다면 리치를 띄운다&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1127" y="442" width="256" height="114" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-61" value="타패&lt;div&gt;1. 내 덱에 있는 패중 하나를 버린다&lt;/div&gt;&lt;div&gt;2. 버린 스택에 패를 둔다&lt;/div&gt;&lt;div&gt;3. 다른사람이 주워갈 수 있다면 줍는다&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-61" value="타패&lt;div&gt;1. 내 덱에 있는 패중 하나를 버린다&lt;/div&gt;&lt;div&gt;2. 버린 스택에 패를 둔다&lt;/div&gt;&lt;div&gt;3. 다른사람이 주워갈 수 있다면 줍는다&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1153" y="592" width="204" height="128" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-62" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-61" target="BLhZ6JWoXuRRobSCugTl-59">
@@ -229,7 +229,7 @@
           <mxGeometry x="1714" y="760" width="195" height="106" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-82" value="론&lt;div&gt;버린걸로 내가 났을때&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1534" y="902" width="120" height="80" as="geometry" />
+          <mxGeometry x="1508" y="924" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-83" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-82" target="BLhZ6JWoXuRRobSCugTl-61">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -237,7 +237,7 @@
             <mxPoint x="1503" y="761" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-88" value="덱" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-88" value="덱" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="451" y="509" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-89" value="" style="endArrow=none;html=1;rounded=0;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-88" target="BLhZ6JWoXuRRobSCugTl-7">
@@ -246,10 +246,10 @@
             <mxPoint x="900" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-90" value="공용으로 쓰는 덱&lt;div&gt;1. 패산&lt;/div&gt;&lt;div&gt;2. 왕패&lt;/div&gt;&lt;div&gt;2.1 도라표시&lt;/div&gt;&lt;div&gt;2.2 영상패&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-90" value="공용으로 쓰는 덱&lt;div&gt;1. 패산&lt;/div&gt;&lt;div&gt;2. 왕패&lt;/div&gt;&lt;div&gt;2.1 도라표시&lt;/div&gt;&lt;div&gt;2.2 영상패&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="265" y="693" width="216" height="109" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-91" value="플레이어마다&lt;div&gt;1. 핸드에 있는 덱&lt;/div&gt;&lt;div&gt;2. 버리는 덱&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-91" value="플레이어마다&lt;div&gt;1. 핸드에 있는 덱&lt;/div&gt;&lt;div&gt;2. 버리는 덱&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="481" y="635" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-92" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-91" target="BLhZ6JWoXuRRobSCugTl-88">
@@ -274,9 +274,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="BLhZ6JWoXuRRobSCugTl-97" value="게임이 끝날때마다 점수계산&lt;div&gt;1. 론 / 쯔모에 따라 점수 분배&lt;/div&gt;&lt;div&gt;2. 친인지 자인지에 따라서 점수 계산&lt;/div&gt;&lt;div&gt;3. 역마다 점수 더하기&lt;/div&gt;&lt;div&gt;4. 도라에 점수 더하기&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-41" y="586" width="207" height="102" as="geometry" />
+          <mxGeometry x="-76" y="743" width="207" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="BLhZ6JWoXuRRobSCugTl-98" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-97" target="BLhZ6JWoXuRRobSCugTl-95">
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-98" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-111" target="BLhZ6JWoXuRRobSCugTl-95">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="713" y="488" as="sourcePoint" />
             <mxPoint x="763" y="438" as="targetPoint" />
@@ -320,6 +320,63 @@
             <mxPoint x="262" y="429" as="sourcePoint" />
             <mxPoint x="312" y="379" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-109" value="비교를 위해&lt;div&gt;일단 내 핸드를 정렬하자&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="64" y="40" width="168" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-110" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-99" target="BLhZ6JWoXuRRobSCugTl-109">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="203" y="314" as="sourcePoint" />
+            <mxPoint x="253" y="264" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-111" value="게임의 승/패/무승부 가리기&lt;div&gt;1. 승 -&amp;gt; 론이나 쯔모로 났을때&lt;/div&gt;&lt;div&gt;2. 패 -&amp;gt; 누군가 쯔모로 났을때&lt;/div&gt;&lt;div&gt;론을 당했을때&lt;/div&gt;&lt;div&gt;3. 무승부 -&amp;gt; 덱이 다 떨어져도 승패가 안가려졌을때&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-7" y="566.5" width="272" height="136.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-112" value="" style="endArrow=none;html=1;rounded=0;entryX=0.301;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-97" target="BLhZ6JWoXuRRobSCugTl-111">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="42" y="740" as="sourcePoint" />
+            <mxPoint x="203" y="667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-114" value="문제&lt;div&gt;울었을때, 내 핸드를 어떻게할것인가?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2015" y="400" width="285" height="166.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-115" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-72" target="BLhZ6JWoXuRRobSCugTl-114">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1683" y="747" as="sourcePoint" />
+            <mxPoint x="1733" y="697" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-116" value="1. 내가 구현한 sort는 고정 배열안에서만 돌아감(13)&lt;div&gt;울었을때 이걸 어떻게 다시 수정할것인가..?&lt;/div&gt;&lt;div&gt;- 가변배열이면 좋겠는데, 배열로는 한계가 있다&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="597" width="283" height="131.25" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-117" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-116" target="BLhZ6JWoXuRRobSCugTl-114">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1797" y="721" as="sourcePoint" />
+            <mxPoint x="1847" y="671" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-118" value="2. 울었을때 보여주는 판별을 어떻게 할 것인가..?&lt;div&gt;마작에서는 울면 내 핸드에서 제거하고,&lt;/div&gt;&lt;div&gt;아래에 패로 보여줘야 한다&lt;/div&gt;&lt;div&gt;내 패를 제거해야하는데, 고정배열에서 너무 어려움&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="764" width="284" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-119" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-118" target="BLhZ6JWoXuRRobSCugTl-116">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1797" y="775" as="sourcePoint" />
+            <mxPoint x="1847" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-120" value="3. 깡을 했을때는 보여주는 패가 4개여야함.&lt;div&gt;울었을땐 3개, 깡인거는 4개&lt;/div&gt;&lt;div&gt;보여줘서 4개의 이중 배열로 선언해야되는데&lt;/div&gt;&lt;div&gt;고정 배열은 너무 머리가 아프다... 으으으으으....&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2049" y="905" width="306" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-121" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BLhZ6JWoXuRRobSCugTl-120" target="BLhZ6JWoXuRRobSCugTl-118">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2060" y="796" as="sourcePoint" />
+            <mxPoint x="2110" y="746" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLhZ6JWoXuRRobSCugTl-122" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1709" y="250" width="142" height="142" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
