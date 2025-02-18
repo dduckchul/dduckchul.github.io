@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Tetriscape</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="/assets/unity/{{page.unity_dir}}/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/assets/unity/{{page.unity_dir}}/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -56,12 +56,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
+      var buildUrl = "/assets/unity/{{page.unity_dir}}/Build";
       var loaderUrl = buildUrl + "/Tetriscape_BuildTest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Tetriscape_BuildTest.data.gz",
-        frameworkUrl: buildUrl + "/Tetriscape_BuildTest.framework.js.gz",
-        codeUrl: buildUrl + "/Tetriscape_BuildTest.wasm.gz",
+        dataUrl: buildUrl + "/Tetriscape_BuildTest.data.unityweb",
+        frameworkUrl: buildUrl + "/Tetriscape_BuildTest.framework.js.unityweb",
+        codeUrl: buildUrl + "/Tetriscape_BuildTest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DDuckchul",
         productName: "Tetriscape",
