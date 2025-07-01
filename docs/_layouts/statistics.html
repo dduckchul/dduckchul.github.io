@@ -1,0 +1,142 @@
+<div>
+  <h1 id="todayTxt" style="text-align: center;">오늘 캐릭터 선택 차트</h1>
+  <canvas id="todayCtx"></canvas>
+
+  <h1 id="yesterdayTxt" style="text-align: center;">어제 캐릭터 선택 차트</h1>
+  <canvas id="yesterdayCtx"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getDatabase, ref, get, onValue } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js";
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyDhVGsryrWplHmce6uSrULZvFHq9dzQtzA",
+    authDomain: "firesafety-e73f7.firebaseapp.com",
+    databaseURL: "https://firesafety-e73f7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "firesafety-e73f7",
+    messagingSenderId: "108805437604",
+    appId: "1:108805437604:web:80fd717203cf7c5de14e31",
+    measurementId: "G-C607MGPRM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  
+  // calculate yesterday's date in UTC format
+  const date = new Date();
+  const yesterday = new Date(new Date() - 86400000); // 24 hours in milliseconds
+
+  var utcMonth = date.getUTCMonth() + 1
+  var yesterdayUtcMonth = yesterday.getUTCMonth() + 1;
+
+  var utcDate = date.getUTCDate();
+  var yesterdayUtcDate = yesterday.getUTCDate();
+
+  if(utcMonth < 10) {
+    utcMonth = "0" + utcMonth;
+  }
+
+  if(yesterdayUtcMonth < 10) {
+    yesterdayUtcMonth = "0" + yesterdayUtcMonth;
+  }
+
+  if(utcDate < 10) {
+    utcDate = "0" + date.getUTCDate();
+  }
+
+  if(yesterdayUtcDate < 10) {
+    yesterdayUtcDate = "0" + yesterday.getUTCDate();
+  }
+
+  const utcDateStr = date.getUTCFullYear() + "-" + utcMonth + "-" + utcDate;
+  const yesterdayUtcDateStr = yesterday.getUTCFullYear() + "-" + yesterdayUtcMonth + "-" + yesterdayUtcDate;
+
+  async function readCharData(paramDate) {
+    var charDate = ref(database, 'characterCounts/' + paramDate);
+    try {
+      const snapshot = await get(charDate);
+       if (snapshot.exists()) {
+         return snapshot.val();
+      } else {
+        console.log("No data available for " + paramDate);
+        return null;
+      }
+    } catch (error) {
+      console.error("Error reading data: ", error);
+      throw error;
+    }
+  }
+
+  let charData, yesterdayCharData
+
+  async function readCharDatas(){
+    charData = await readCharData(utcDateStr);
+    yesterdayCharData = await readCharData(yesterdayUtcDateStr);
+  }
+
+  // 차트 그리기
+  const todayCtx = document.getElementById('todayCtx');
+  const yesterdayCtx = document.getElementById('yesterdayCtx');
+
+  readCharDatas().then(() => {
+      console.log(charData);
+      console.log(yesterdayCharData);
+
+      if(charData == null){
+        changeText('todayTxt', utcDateStr + ' 캐릭터 선택률 데이터가 없습니다.');
+      } else {
+        changeText('todayTxt', utcDateStr + ' 캐릭터 선택률');
+        createChart(todayCtx, charData);
+      }
+
+      if(yesterdayCharData == null){
+        changeText('yesterdayTxt', yesterdayUtcDateStr + ' 캐릭터 선택 데이터가 없습니다.');
+      } else {
+        changeText('yesterdayTxt', yesterdayUtcDateStr + ' 캐릭터 선택수');
+        createChart(yesterdayCtx, yesterdayCharData);
+      }
+    }
+  )
+
+  function changeText(id, text) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = text;
+    } else {
+      console.error(`Element with id ${id} not found.`);
+    }
+  }
+
+  function createChart(domId, jsonData){
+    const labels = Object.keys(jsonData);
+    const data = Object.values(jsonData);
+
+    new Chart(domId, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '캐릭터 선택 수',
+          data: data,
+          backgroundColor: [
+            'rgb(169, 94, 19)',
+            'rgb(255, 224, 224)',
+            'rgb(69, 77, 89)',
+            'rgb(61, 103, 206)',
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  }
+</script>
